@@ -26,5 +26,6 @@ jobs:
           
       - name: Run Django tests for apps
         run: |
+          cd smart_class
           python manage.py migrate --noinput
           python manage.py test apps
